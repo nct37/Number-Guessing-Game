@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Number Guessing Game</title>
+</head>
+
+<body>
+  <div class="container" id="game-container">
+    <p class="instructions">New player? Enter your name below or hit enter to play as a GUEST. Returning players can their name from the list. Guess the number quickly to earn more points!</p>
+    <div class="container">
+      <div class="row" id="player-input">
+        <input type="text" id="enter-player" placeholder="Enter your name...">
+        <select id="player-list">
+          <option>SAVED PLAYERS</option>
+        </select>
+      </div>
+      <div class="row">
+        <p class="player-dash"></p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Guess the Number</h2>
+      <div class="row" id="game-wrapper">
+        <p>Guess a number between <span class="min-num"></span> and <span class="max-num"></span>. You have <span class="guesses"></span> guesses...</p>
+        <input type="number" id="guess-input" placeholder="Enter guess..." disabled="true">
+        <input type="submit" value="Submit" id="guess-btn"><span id="timer"></span>
+        <p class="message"></p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

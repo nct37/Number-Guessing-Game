@@ -1,0 +1,79 @@
+body {
+  margin: 10%;
+  text-align: center;
+  background-color: black;
+}
+input[type=text], input[type=number] {
+  border-color: #ef4747;
+}
+#game-container {
+  background-color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+}
+.instructions {
+  color: blue;
+  font-size: .9em;
+  padding: 10px 30px 5px 30px;
+}
+h5 {
+  color: white;
+}
+.player-dash {
+  min-height: 57px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+@media (min-width: 750px) {
+  #game-container {
+    width: 50%
+  }
+}
+@media (max-width: 400px) {
+  body {
+    margin: 2%;
+  }
+  .player-dash {
+    min-height: 60px;
+  }
+  #game-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+#game-wrapper p {
+  font-size: 1.1em;
+}
+#guess-input {
+  font-size: 1.3em;
+  max-width: 200px;
+}
+#guess-btn {
+  font-size: 1.1em;
+  border: none;
+}
+.message {
+  min-height: 53px;
+  font-weight: bold;
+  font-size: 3em;
+}
+#timer {
+  display: block;
+  min-width: 80px;
+  font-family: mono;
+  font-size: .8em;
+}
+.min-num, .max-num, .results, .guesses {
+  font-weight: bold;
+}
+.face {
+  background-image: url('img/deadbirds2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carlton {
+  background-image: url('img/giphy.gif');
+  background-repeat: no-repeat;
+  background-position: top;
+}
