@@ -59,10 +59,10 @@ h5 {
   font-size: 3em;
 }
 #timer {
+  color: purple;
   display: block;
-  min-width: 80px;
   font-family: mono;
-  font-size: .8em;
+  min-width: 80px;
 }
 .min-num, .max-num, .results, .guesses {
   font-weight: bold;

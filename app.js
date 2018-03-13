@@ -149,7 +149,7 @@ GAME FUNCTION:
       guessBtn.className += 'play-again';
       guessBtn.value = 'Play Again';
 
-      startOver();
+      startOver('lose');
       // User guesses wrong, showing number too high or low, and guesses left
     } else if (guessesLeft > guessParLevel) {
       changeInputStyle('red', 'red');
@@ -170,7 +170,7 @@ GAME FUNCTION:
   // Reset the game automatically
   function startOver(reset) {
     let timeOut = 0;
-    (reset === 'scream') ? timeOut = 4000: timeOut = 10000;
+    (reset === 'scream' || reset === 'lose') ? timeOut = 4000: timeOut = 10000;
 
     setTimeout(function() {
       location.reload();
